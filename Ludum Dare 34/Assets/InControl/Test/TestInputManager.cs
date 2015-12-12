@@ -71,7 +71,7 @@ namespace InControl
 
 			if (Input.GetKeyDown( KeyCode.R ))
 			{
-				Application.LoadLevel( "TestInputManager" );
+				//Application.LoadLevel( "TestInputManager" );
 			}
 		}
 

@@ -6,17 +6,18 @@ public class Player : MonoBehaviour {
 
     public static InputDevice currentDevice;
     private InControlManager inControlScript;
-    public float xJoyAxis;
-    public float yJoyAxis;
-    public Vector2 playerVel;
+    [HideInInspector] public float xJoyAxis;
+    [HideInInspector] public float yJoyAxis;
+    [HideInInspector] public Vector2 playerVel;
     private Rigidbody2D playerBody;
 
-    public float turnSpeed;
-    public float maxUpVelocity;
-    public float maxDownVelocity;
-    public float maxXVelocity;
-    public float stickRotation;
+    [HideInInspector] public float turnSpeed;
+    [HideInInspector] public float maxUpVelocity;
+    [HideInInspector] public float maxDownVelocity;
+    [HideInInspector] public float maxXVelocity;
+    [HideInInspector] public float stickRotation;
     private bool inMovement;
+    [HideInInspector] public float truc;
 
 	// Use this for initialization
 	void Start () {
@@ -41,14 +42,13 @@ public class Player : MonoBehaviour {
         {
             inMovement = true;
         }
-        if (currentDevice.LeftStickY < -0.85)
+
+        if (currentDevice.LeftStickY < 1)
         {
-            maxDownVelocity = 15;
+            truc = Maths.Remap(yJoyAxis, 1, -1, 1, 4);
+            maxDownVelocity = truc;
         }
-        else
-        {
-            maxDownVelocity = 10;
-        }
+
         if (inMovement == true)
         {
             transform.localScale -= new Vector3(0.001f, 0.001f, 1);
@@ -59,15 +59,7 @@ public class Player : MonoBehaviour {
     void FixedUpdate()
     {
         playerVel = playerBody.velocity;
-
-        if (inMovement == false)
-        {
-            playerBody.velocity = Vector3.zero;
-        }
-        if (inMovement == true)
-        {
-            playerBody.AddForce(new Vector2(xJoyAxis * turnSpeed, yJoyAxis * turnSpeed));
-        }
+        playerBody.AddForce(new Vector2(xJoyAxis * turnSpeed, yJoyAxis * turnSpeed));
         playerBody.velocity = new Vector2(Mathf.Clamp(playerBody.velocity.x, -maxXVelocity, maxXVelocity), Mathf.Clamp(playerBody.velocity.y, -maxDownVelocity, maxUpVelocity));   
     }
 
