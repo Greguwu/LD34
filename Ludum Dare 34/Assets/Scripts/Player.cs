@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
     public float maxDownVelocity;
     public float maxXVelocity;
     public float stickRotation;
+    private bool inMovement;
 
 	// Use this for initialization
 	void Start () {
@@ -31,12 +32,37 @@ public class Player : MonoBehaviour {
         yJoyAxis = currentDevice.LeftStickY;
         stickRotation = Mathf.Atan2(currentDevice.LeftStickY, currentDevice.LeftStickX) * Mathf.Rad2Deg;
         this.GetComponentInChildren<SpriteRenderer>().transform.eulerAngles = new Vector3(0, 0, stickRotation - 270);
+
+        if (((currentDevice.LeftStickX < 0.15)&&(currentDevice.LeftStickX > -0.15))&&((currentDevice.LeftStickY < 0.15) && (currentDevice.LeftStickY > -0.15)))
+        {
+            inMovement = false;
+        }
+        else
+        {
+            inMovement = true;
+        }
+        if (currentDevice.LeftStickY < -0.85)
+        {
+            maxDownVelocity = 15;
+        }
+        else
+        {
+            maxDownVelocity = 10;
+        }
     }
 
     void FixedUpdate()
     {
         playerVel = playerBody.velocity;
-        playerBody.AddForce(new Vector2(xJoyAxis * turnSpeed, yJoyAxis * turnSpeed));
+
+        if (inMovement == false)
+        {
+            playerBody.velocity = Vector3.zero;
+        }
+        if (inMovement == true)
+        {
+            playerBody.AddForce(new Vector2(xJoyAxis * turnSpeed, yJoyAxis * turnSpeed));
+        }
         if (playerBody.velocity.x > maxXVelocity)
         {
             playerBody.velocity = new Vector3(maxXVelocity, playerBody.velocity.y);
