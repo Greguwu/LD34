@@ -49,6 +49,11 @@ public class Player : MonoBehaviour {
         {
             maxDownVelocity = 10;
         }
+        if (inMovement == true)
+        {
+            transform.localScale -= new Vector3(0.001f, 0.001f, 1);
+            transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, 0.4f, 1), Mathf.Clamp(transform.localScale.y, 0.4f, 1), 1);
+        }
     }
 
     void FixedUpdate()
@@ -63,21 +68,11 @@ public class Player : MonoBehaviour {
         {
             playerBody.AddForce(new Vector2(xJoyAxis * turnSpeed, yJoyAxis * turnSpeed));
         }
-        if (playerBody.velocity.x > maxXVelocity)
-        {
-            playerBody.velocity = new Vector3(maxXVelocity, playerBody.velocity.y);
-        }
-        if (playerBody.velocity.x < -maxXVelocity)
-        {
-            playerBody.velocity = new Vector3(-maxXVelocity, playerBody.velocity.y);
-        }
-        if (playerBody.velocity.y < -maxDownVelocity)
-        {
-            playerBody.velocity = new Vector3(playerBody.velocity.x, -maxDownVelocity);
-        }
-        if (playerBody.velocity.y > maxUpVelocity)
-        {
-            playerBody.velocity = new Vector3(playerBody.velocity.x, maxUpVelocity);
-        }
+        playerBody.velocity = new Vector2(Mathf.Clamp(playerBody.velocity.x, -maxXVelocity, maxXVelocity), Mathf.Clamp(playerBody.velocity.y, -maxDownVelocity, maxUpVelocity));   
+    }
+
+    public void scalePlayer(float newScale)
+    {
+        transform.localScale += new Vector3(newScale, newScale, 0);
     }
 }
