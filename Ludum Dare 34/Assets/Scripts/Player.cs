@@ -32,6 +32,21 @@ public class Player : MonoBehaviour {
 
 	private Animator animator;
 
+	//LES SONS DU JEU EN TABLEAU COMMME UN POOORC
+	private AudioSource sourceAudio;
+	public AudioClip[] collisonsVille;
+	public AudioClip[] collisonsForet;
+	public AudioClip[] collisonsPlage;
+
+	public AudioClip[] plopsVille;
+	public AudioClip[] plopsForet;
+	public AudioClip[] plopsPlage;
+
+	private int randomRange;
+
+	//IMPORTANT : DANS QUEL ENVIRONNEMENT ON EST :ville, foret, littoral, ocean
+	public string environnement = "ville"; 
+
     // Use this for initialization
     void Start () {
         currentDevice = InputManager.ActiveDevice;
@@ -42,6 +57,7 @@ public class Player : MonoBehaviour {
         startSpriteMinimumSize = spriteMinimumSize;
 		animator = playerSprite.GetComponent<Animator>();
 		playerParticles = GetComponentInChildren<ParticleSystem>();
+		sourceAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -95,5 +111,71 @@ public class Player : MonoBehaviour {
     public void playAnim(string animAJouer)
     {
 		animator.Play( Animator.StringToHash( animAJouer ) );
+    }
+
+    public void colliSon()
+    {
+    	//Ici on regarde dans quel environnement on se trouve
+    	switch (environnement)
+    	{
+    		case "ville":
+				randomRange = Random.Range(0, collisonsVille.Length);
+		        if (collisonsVille[randomRange] != null)
+		        {
+					sourceAudio.PlayOneShot(collisonsVille[randomRange]);
+		        }
+    		break;
+
+			case "foret":
+				randomRange = Random.Range(0, collisonsForet.Length);
+		        if (collisonsForet[randomRange] != null)
+		        {
+					sourceAudio.PlayOneShot(collisonsForet[randomRange]);
+		        }
+			break;    	
+				
+			case "ocean":
+			randomRange = Random.Range(0, collisonsPlage.Length);
+		        if (collisonsPlage[randomRange] != null)
+		        {
+					sourceAudio.PlayOneShot(collisonsPlage[randomRange]);
+		        }
+    		break;
+    	}
+    }
+
+	public void playPlop()
+    {
+    	//sourceAudio.clip = ;
+    	//sourceAudio.PlayOneShot();
+    	Debug.Log("Yo met le son gros");
+
+    	//Ici on regarde dans quel environnement on se trouve
+    	switch (environnement)
+    	{
+    		case "ville":
+				randomRange = Random.Range(0, plopsVille.Length);
+		        if (plopsVille[randomRange] != null)
+		        {
+					sourceAudio.PlayOneShot(plopsVille[randomRange]);
+		        }
+    		break;
+
+			case "foret":
+				randomRange = Random.Range(0, plopsForet.Length);
+		        if (plopsForet[randomRange] != null)
+		        {
+					sourceAudio.PlayOneShot(plopsForet[randomRange]);
+		        }
+			break;    	
+				
+			case "ocean":
+			randomRange = Random.Range(0, plopsPlage.Length);
+		        if (plopsPlage[randomRange] != null)
+		        {
+					sourceAudio.PlayOneShot(plopsPlage[randomRange]);
+		        }
+    		break;
+    	}
     }
 }
