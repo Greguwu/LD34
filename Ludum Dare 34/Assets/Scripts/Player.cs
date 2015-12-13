@@ -24,6 +24,7 @@ public class Player : MonoBehaviour {
     private float lastStickRotation = 0;
     public float spriteMinimumSize;
     public float spriteMaximumSize;
+    public float trailScale;
 
     // Use this for initialization
     void Start () {
@@ -64,6 +65,7 @@ public class Player : MonoBehaviour {
         }
 
         transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, spriteMinimumSize, spriteMaximumSize), Mathf.Clamp(transform.localScale.y, spriteMinimumSize, spriteMaximumSize), 1);
+        playerTrail.startWidth = Mathf.Clamp(transform.localScale.x * trailScale, 0.1f, 1);
     }
 
     void FixedUpdate()
