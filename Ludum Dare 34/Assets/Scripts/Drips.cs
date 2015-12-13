@@ -10,6 +10,7 @@ public class Drips : MonoBehaviour {
     private Rigidbody2D dripBody;
     private bool inArea = false;
     private GameObject playerObject;
+    private Vector3 previousScale;
 
 	// Use this for initialization
 	void Start () {
@@ -44,6 +45,9 @@ public class Drips : MonoBehaviour {
         if (other.GetComponent<Player>() == true)
         {
             other.GetComponent<Player>().scalePlayer(scalingFactor);
+            previousScale = other.GetComponent<Player>().transform.localScale;
+            other.GetComponent<Player>().playAnim("Grow");
+            other.GetComponent<Player>().transform.localScale = previousScale;
         }
         if ((other.GetComponent<Player>() == true)||(other.GetComponent<Obstacles>() == true))
         {
