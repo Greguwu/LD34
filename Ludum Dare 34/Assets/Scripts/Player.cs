@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
     private Rigidbody2D playerBody;
     private SpriteRenderer playerSprite;
     private TrailRenderer playerTrail;
-    private ParticleSystem playerParticles;
+    //private ParticleSystem playerParticles;
 
     public float turnSpeed;
     public float maxUpVelocity;
@@ -41,7 +41,7 @@ public class Player : MonoBehaviour {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>();
         startSpriteMinimumSize = spriteMinimumSize;
 		animator = playerSprite.GetComponent<Animator>();
-		playerParticles = GetComponentInChildren<ParticleSystem>();
+		//playerParticles = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
