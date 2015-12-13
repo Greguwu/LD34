@@ -20,9 +20,11 @@ public class Player : MonoBehaviour {
     private bool inMovement;
     private float velocityRemap;
     private float lastStickRotation = 0;
+    public float spriteMinimumSize;
+    public float spriteMaximumSize;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         currentDevice = InputManager.ActiveDevice;
         playerBody = GetComponent<Rigidbody2D>();
     }
@@ -57,7 +59,7 @@ public class Player : MonoBehaviour {
             transform.localScale -= new Vector3(0.001f, 0.001f, 1);
         }
 
-        transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, 0.4f, 1), Mathf.Clamp(transform.localScale.y, 0.4f, 1), 1);
+        transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, spriteMinimumSize, spriteMaximumSize), Mathf.Clamp(transform.localScale.y, spriteMinimumSize, spriteMaximumSize), 1);
     }
 
     void FixedUpdate()
