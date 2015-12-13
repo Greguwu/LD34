@@ -11,6 +11,8 @@ public class Player : MonoBehaviour {
     [HideInInspector]
     public Vector2 playerVel;
     private Rigidbody2D playerBody;
+    private SpriteRenderer playerSprite;
+    private TrailRenderer playerTrail;
 
     public float turnSpeed;
     public float maxUpVelocity;
@@ -27,6 +29,8 @@ public class Player : MonoBehaviour {
     void Start () {
         currentDevice = InputManager.ActiveDevice;
         playerBody = GetComponent<Rigidbody2D>();
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
+        playerTrail = GetComponentInChildren<TrailRenderer>();
     }
 
     // Update is called once per frame
@@ -40,12 +44,12 @@ public class Player : MonoBehaviour {
         if (((currentDevice.LeftStickX < 0.15)&&(currentDevice.LeftStickX > -0.15))&&((currentDevice.LeftStickY < 0.15) && (currentDevice.LeftStickY > -0.15)))
         {
             inMovement = false;
-            this.GetComponentInChildren<SpriteRenderer>().transform.eulerAngles = new Vector3(0, 0, lastStickRotation);
+            playerSprite.transform.eulerAngles = new Vector3(0, 0, lastStickRotation);
         }
         else
         {
             inMovement = true;
-            this.GetComponentInChildren<SpriteRenderer>().transform.eulerAngles = new Vector3(0, 0, stickRotation - 270);
+            playerSprite.transform.eulerAngles = new Vector3(0, 0, stickRotation - 270);
             lastStickRotation = stickRotation - 270;
         }
 
