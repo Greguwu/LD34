@@ -26,7 +26,6 @@ public class Obstacles : MonoBehaviour {
 
     void HurtPlayer(Collision2D other)
     {
-        Debug.Log("wesh");
         hasCollidedOnce = true;
         other.gameObject.GetComponent<Player>().scalePlayer(-downScalingFactor);
     }
