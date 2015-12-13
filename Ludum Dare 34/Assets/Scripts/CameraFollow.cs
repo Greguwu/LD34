@@ -26,7 +26,7 @@ public class CameraFollow : MonoBehaviour {
     {
         transform.position = new Vector3(0, playerObject.transform.position.y -4, -10);
         backParallax = Maths.Remap(playerObject.transform.localPosition.y, backStartY * -1, playerEnd, backStartY, playerStartY);
-        background.transform.localPosition = new Vector3(0, backParallax, 10);
+        background.transform.localPosition = new Vector3(0, backParallax - 26, 10);
     }
 
 }
