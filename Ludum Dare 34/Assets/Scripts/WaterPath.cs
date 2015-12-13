@@ -18,7 +18,7 @@ public class WaterPath : MonoBehaviour {
 
     IEnumerator WaitEnd(Collider2D other)
     {
-        Debug.Log("wesh");
+        //Debug.Log("wait");
         yield return new WaitForSeconds(pathDuration);
         other.GetComponent<SplineWalker>().enabled = false;
     }
