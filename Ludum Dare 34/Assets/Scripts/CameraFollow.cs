@@ -8,9 +8,11 @@ public class CameraFollow : MonoBehaviour {
     private SpriteRenderer background;
     private GameObject secondCamera;
     public float playerEnd;
-    private float backParallax;
+    [HideInInspector]
+    public float backParallax;
     private float playerStartY;
-    private float backStartY;
+    [HideInInspector]
+    public float backStartY;
     private GameObject normalMap;
     public float normalMapScrollSpeed;
 
