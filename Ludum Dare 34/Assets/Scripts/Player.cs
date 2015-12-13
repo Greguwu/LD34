@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     private Rigidbody2D playerBody;
     private SpriteRenderer playerSprite;
     private TrailRenderer playerTrail;
+    private ParticleSystem playerParticles;
 
     public float turnSpeed;
     public float maxUpVelocity;
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour {
     public float trailScale;
     private CameraFollow mainCamera;
 
+	private Animator animator;
+
     // Use this for initialization
     void Start () {
         currentDevice = InputManager.ActiveDevice;
@@ -37,6 +40,8 @@ public class Player : MonoBehaviour {
         playerTrail = GetComponentInChildren<TrailRenderer>();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>();
         startSpriteMinimumSize = spriteMinimumSize;
+		animator = playerSprite.GetComponent<Animator>();
+		playerParticles = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -85,5 +90,10 @@ public class Player : MonoBehaviour {
     public void scalePlayer(float newScale)
     {
         transform.localScale += new Vector3(newScale, newScale, 0);
+    }
+
+    public void playAnim(string animAJouer)
+    {
+		animator.Play( Animator.StringToHash( animAJouer ) );
     }
 }

@@ -21,6 +21,9 @@ public class Obstacles : MonoBehaviour {
         if (!hasCollidedOnce)
         {
             HurtPlayer(other);
+			//previousScale = other.gameObject.GetComponent<Player>().transform.localScale;
+            other.gameObject.GetComponent<Player>().playAnim("collision");
+            //other.gameObject.GetComponent<Player>().transform.localScale = previousScale;
         }
     }
 
