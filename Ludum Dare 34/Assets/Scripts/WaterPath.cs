@@ -22,6 +22,7 @@ public class WaterPath : MonoBehaviour {
         yield return new WaitForSeconds(pathDuration);
         other.GetComponent<SplineWalker>().enabled = false;
         other.GetComponent<SplineWalker>().progress = 0;
+		other.gameObject.GetComponent<Player>().playSonOutPath();
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -32,6 +33,7 @@ public class WaterPath : MonoBehaviour {
             other.GetComponent<SplineWalker>().spline = thisSpline;
             other.GetComponent<SplineWalker>().enabled = true;
             StartCoroutine(WaitEnd(other));
+			other.gameObject.GetComponent<Player>().playSonInPath();
         }
     }
 }

@@ -48,6 +48,7 @@ public class Drips : MonoBehaviour {
             previousScale = other.GetComponent<Player>().transform.localScale;
             other.GetComponent<Player>().playAnim("Grow");
             other.GetComponent<Player>().transform.localScale = previousScale;
+			other.gameObject.GetComponent<Player>().playPlop();
         }
         if ((other.GetComponent<Player>() == true)||(other.GetComponent<Obstacles>() == true))
         {
