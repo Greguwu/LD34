@@ -17,14 +17,17 @@ public class Player : MonoBehaviour {
     public float turnSpeed;
     public float maxUpVelocity;
     public float maxDownVelocity;
+    public float scaleSpeedFactor;
     public float maxXVelocity;
     private float stickRotation;
     private bool inMovement;
     private float velocityRemap;
     private float lastStickRotation = 0;
     public float spriteMinimumSize;
+    private float startSpriteMinimumSize;
     public float spriteMaximumSize;
     public float trailScale;
+    private CameraFollow mainCamera;
 
     // Use this for initialization
     void Start () {
@@ -32,6 +35,8 @@ public class Player : MonoBehaviour {
         playerBody = GetComponent<Rigidbody2D>();
         playerSprite = GetComponentInChildren<SpriteRenderer>();
         playerTrail = GetComponentInChildren<TrailRenderer>();
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>();
+        startSpriteMinimumSize = spriteMinimumSize;
     }
 
     // Update is called once per frame
@@ -56,7 +61,7 @@ public class Player : MonoBehaviour {
 
         if (currentDevice.LeftStickY < 1)
         {
-            velocityRemap = Maths.Remap(yJoyAxis, 1, -1, 1, maxDownVelocity);
+            velocityRemap = Maths.Remap(yJoyAxis, 1, -1, 1, maxDownVelocity + (playerBody.transform.localScale.x * scaleSpeedFactor));
         }
 
         if (inMovement == true)
@@ -64,6 +69,7 @@ public class Player : MonoBehaviour {
             transform.localScale -= new Vector3(0.001f, 0.001f, 1);
         }
 
+        spriteMinimumSize = Maths.Remap(mainCamera.backParallax, mainCamera.backStartY, mainCamera.backStartY*-1, startSpriteMinimumSize, spriteMaximumSize);
         transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, spriteMinimumSize, spriteMaximumSize), Mathf.Clamp(transform.localScale.y, spriteMinimumSize, spriteMaximumSize), 1);
         playerTrail.startWidth = Mathf.Clamp(transform.localScale.x * trailScale, 0.1f, 1);
     }
