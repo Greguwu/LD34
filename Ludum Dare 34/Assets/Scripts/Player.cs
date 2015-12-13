@@ -42,6 +42,10 @@ public class Player : MonoBehaviour {
 	public AudioClip[] plopsForet;
 	public AudioClip[] plopsPlage;
 
+	//là ya tous les sons in puis les sons out, on fonctionne à l'envers
+	public AudioClip[] sonsIN;
+	public AudioClip[] sonsOUT;
+
 	private int randomRange;
 
 	//IMPORTANT : DANS QUEL ENVIRONNEMENT ON EST :ville, foret, littoral, ocean
@@ -146,9 +150,6 @@ public class Player : MonoBehaviour {
 
 	public void playPlop()
     {
-    	//sourceAudio.clip = ;
-    	//sourceAudio.PlayOneShot();
-    	Debug.Log("Yo met le son gros");
 
     	//Ici on regarde dans quel environnement on se trouve
     	switch (environnement)
@@ -178,4 +179,42 @@ public class Player : MonoBehaviour {
     		break;
     	}
     }
+
+	public void playSonInPath()
+	{
+		//Ici on regarde dans quel environnement on se trouve
+    	switch (environnement)
+    	{
+    		case "ville":
+				sourceAudio.PlayOneShot(sonsIN[0]);
+    		break;
+
+			case "foret":
+				sourceAudio.PlayOneShot(sonsIN[1]);
+			break;    	
+				
+			case "ocean":
+				sourceAudio.PlayOneShot(sonsIN[2]);
+    		break;
+    	}
+	}
+
+	public void playSonOutPath()
+	{
+		//Ici on regarde dans quel environnement on se trouve
+    	switch (environnement)
+    	{
+    		case "ville":
+				sourceAudio.PlayOneShot(sonsOUT[0]);
+    		break;
+
+			case "foret":
+				sourceAudio.PlayOneShot(sonsOUT[1]);
+			break;    	
+				
+			case "ocean":
+				sourceAudio.PlayOneShot(sonsOUT[2]);
+    		break;
+    	}
+	}
 }
