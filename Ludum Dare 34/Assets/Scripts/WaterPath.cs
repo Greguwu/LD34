@@ -21,6 +21,7 @@ public class WaterPath : MonoBehaviour {
         //Debug.Log("wait");
         yield return new WaitForSeconds(pathDuration);
         other.GetComponent<SplineWalker>().enabled = false;
+        other.GetComponent<SplineWalker>().progress = 0;
     }
 
     void OnTriggerStay2D(Collider2D other)
