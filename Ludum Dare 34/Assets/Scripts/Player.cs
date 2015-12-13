@@ -56,6 +56,7 @@ public class Player : MonoBehaviour {
         {
             inMovement = true;
             playerSprite.transform.eulerAngles = new Vector3(0, 0, stickRotation - 270);
+            //playerSprite.transform.eulerAngles = new Vector3(0, 0, Maths.Remap(stickRotation, -180, 0, -70, 70));
             lastStickRotation = stickRotation - 270;
         }
 
