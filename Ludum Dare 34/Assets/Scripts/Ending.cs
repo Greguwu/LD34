@@ -9,6 +9,7 @@ public class Ending : MonoBehaviour
     private Rigidbody2D playerBody;
     private SpriteRenderer playerSprite;
     private TrailRenderer playerTrail;
+    public AudioSource endSong;
 
     // Use this for initialization
     void Start()
@@ -36,7 +37,8 @@ public class Ending : MonoBehaviour
             playerScript.enabled = false;
             playerSprite.GetComponent<Animator>().Play(Animator.StringToHash("entree ocean"));
             playerTrail.time = 1f;
-            GetComponentInChildren<ParticleSystem>().enableEmission = true;
+            endSong.Play();
+            //GetComponentInChildren<ParticleSystem>().enableEmission = true;
         }
     }
 }

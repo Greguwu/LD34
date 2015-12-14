@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class Drips : MonoBehaviour {
 
@@ -11,9 +12,11 @@ public class Drips : MonoBehaviour {
     private bool inArea = false;
     private GameObject playerObject;
     private Vector3 previousScale;
+    private Vector3 originalScale;
 
 	// Use this for initialization
 	void Start () {
+        originalScale = transform.localScale;
         playerObject = GameObject.FindGameObjectWithTag("Player").transform.parent.gameObject;
         randomRange = Random.Range(0, dripsSprites.Length);
         if (dripsSprites[randomRange] != null)
@@ -21,6 +24,7 @@ public class Drips : MonoBehaviour {
             GetComponent<SpriteRenderer>().sprite = dripsSprites[randomRange];
         }
         dripBody = GetComponent<Rigidbody2D>();
+        AnimForth();
     }
 	
 	// Update is called once per frame
@@ -54,5 +58,15 @@ public class Drips : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
+    }
+
+    void AnimForth()
+    {
+        transform.DOScale(new Vector3(originalScale.x + 0.2f, originalScale.y + 0.2f, 1), 0.7f).OnComplete(AnimBack);
+    }
+
+    void AnimBack()
+    {
+        transform.DOScale(originalScale, 0.7f).OnComplete(AnimForth);
     }
 }

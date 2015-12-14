@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using InControl;
+using DG.Tweening;
 
 public class Player : MonoBehaviour {
 
@@ -22,11 +23,12 @@ public class Player : MonoBehaviour {
     public float maxXVelocity;
     private float stickRotation;
     private bool inMovement;
-    private float velocityRemap;
+    public float velocityRemap;
     private float lastStickRotation = 0;
     public float spriteMinimumSize;
     private float startSpriteMinimumSize;
     public float spriteMaximumSize;
+    private float startSpriteMaximumSize;
     //private float startSpriteMaximumSize;
     public float trailScale;
     private CameraFollow mainCamera;
@@ -60,6 +62,7 @@ public class Player : MonoBehaviour {
         playerTrail = GetComponentInChildren<TrailRenderer>();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>();
         startSpriteMinimumSize = spriteMinimumSize;
+        startSpriteMaximumSize = spriteMaximumSize;
         //startSpriteMaximumSize = spriteMaximumSize;
 		animator = playerSprite.GetComponent<Animator>();
 		//playerParticles = GetComponentInChildren<ParticleSystem>();
@@ -97,7 +100,8 @@ public class Player : MonoBehaviour {
             transform.localScale -= new Vector3(0.001f, 0.001f, 1);
         }
 
-        spriteMinimumSize = Maths.Remap(mainCamera.backParallax, mainCamera.backStartY, mainCamera.backStartY*-1, startSpriteMinimumSize, spriteMaximumSize);
+        spriteMinimumSize = Maths.Remap(mainCamera.backParallax, mainCamera.backStartY, mainCamera.backStartY*-1, startSpriteMinimumSize, startSpriteMaximumSize);
+        spriteMaximumSize = Maths.Remap(mainCamera.backParallax, mainCamera.backStartY, mainCamera.backStartY * -1, startSpriteMaximumSize, startSpriteMaximumSize + 0.5f);
         //spriteMaximumSize = Maths.Remap(mainCamera.backParallax, mainCamera.backStartY, mainCamera.backStartY*-1, startSpriteMaximumSize, spriteMaximumSize * 2);
         transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, spriteMinimumSize, spriteMaximumSize), Mathf.Clamp(transform.localScale.y, spriteMinimumSize, spriteMaximumSize), 1);
         playerTrail.startWidth = Mathf.Clamp(transform.localScale.x * trailScale, 0.1f, 1);
@@ -112,7 +116,8 @@ public class Player : MonoBehaviour {
 
     public void scalePlayer(float newScale)
     {
-        transform.localScale += new Vector3(newScale, newScale, 0);
+        //transform.localScale += new Vector3(newScale, newScale, 0);
+        transform.DOScale(transform.localScale.x + newScale, 1);
     }
 
     public void playAnim(string animAJouer)
