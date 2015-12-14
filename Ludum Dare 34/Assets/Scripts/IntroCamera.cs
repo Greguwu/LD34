@@ -12,6 +12,10 @@ public class IntroCamera : MonoBehaviour {
     private Player playerScript;
     private Rigidbody2D playerBody;
     private GameObject secondCamera;
+    private ParticleSystem playerParticles;
+    private SpriteRenderer playerSprite;
+    private TrailRenderer playerTrail;
+    public Animator dripAnimation;
 
     // Use this for initialization
     void Awake () {
@@ -21,6 +25,9 @@ public class IntroCamera : MonoBehaviour {
         playerScript = GameObject.FindGameObjectWithTag("Player").transform.parent.GetComponent<Player>();
         playerBody = GameObject.FindGameObjectWithTag("Player").transform.parent.GetComponent<Rigidbody2D>();
         secondCamera = GameObject.FindGameObjectWithTag("Second Camera").transform.gameObject;
+        playerParticles = playerBody.GetComponentInChildren<ParticleSystem>();
+        playerSprite = playerBody.GetComponentInChildren<SpriteRenderer>();
+        playerTrail = playerBody.GetComponentInChildren<TrailRenderer>();
     }
 
     void Start()
@@ -43,12 +50,19 @@ public class IntroCamera : MonoBehaviour {
                 playerBody.gravityScale = 1;
                 playerScript.enabled = true;
                 enabled = false;
+                playerSprite.DOColor(new Color(255, 255, 255, 1), 5).OnComplete(enableTrail);
             }
         }
 	}
 
     void CanPlay()
     {
+        dripAnimation.enabled = true;
         canStart = true;
+    }
+
+    void enableTrail()
+    {
+        //playerTrail.enabled = true;
     }
 }

@@ -1,0 +1,1010 @@
+fileFormatVersion: 2
+guid: 0ed41ebcbab7b1b4f943f00d690eb4f0
+timeCreated: 1450084861
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: gouttelogosevide_0
+    21300002: gouttelogosevide_1
+    21300004: gouttelogosevide_2
+    21300006: gouttelogosevide_3
+    21300008: gouttelogosevide_4
+    21300010: gouttelogosevide_5
+    21300012: gouttelogosevide_6
+    21300014: gouttelogosevide_7
+    21300016: gouttelogosevide_8
+    21300018: gouttelogosevide_9
+    21300020: gouttelogosevide_10
+    21300022: gouttelogosevide_11
+    21300024: gouttelogosevide_12
+    21300026: gouttelogosevide_13
+    21300028: gouttelogosevide_14
+    21300030: gouttelogosevide_15
+    21300032: gouttelogosevide_16
+    21300034: gouttelogosevide_17
+    21300036: gouttelogosevide_18
+    21300038: gouttelogosevide_19
+    21300040: gouttelogosevide_20
+    21300042: gouttelogosevide_21
+    21300044: gouttelogosevide_22
+    21300046: gouttelogosevide_23
+    21300048: gouttelogosevide_24
+    21300050: gouttelogosevide_25
+    21300052: gouttelogosevide_26
+    21300054: gouttelogosevide_27
+    21300056: gouttelogosevide_28
+    21300058: gouttelogosevide_29
+    21300060: gouttelogosevide_30
+    21300062: gouttelogosevide_31
+    21300064: gouttelogosevide_32
+    21300066: gouttelogosevide_33
+    21300068: gouttelogosevide_34
+    21300070: gouttelogosevide_35
+    21300072: gouttelogosevide_36
+    21300074: gouttelogosevide_37
+    21300076: gouttelogosevide_38
+    21300078: gouttelogosevide_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 429, z: 454, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: gouttelogosevide_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 429
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 429
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 429
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_3
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 429
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_4
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 429
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_5
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 429
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 429
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 429
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 346
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_9
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 346
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_10
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 346
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 346
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_12
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 346
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_13
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 346
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 346
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_15
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 346
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 263
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_17
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 263
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 263
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_19
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 263
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_20
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 263
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_21
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 263
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_22
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 263
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_23
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 263
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_25
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 180
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 180
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_27
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 180
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_28
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 180
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+    - name: gouttelogosevide_29
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 180
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_30
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 180
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_31
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 180
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_33
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 97
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_34
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 97
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_35
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 97
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_36
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 97
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_37
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 97
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_38
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 97
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    - name: gouttelogosevide_39
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 97
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 1.5}
+        - {x: 14, y: 39.5}
+        - {x: 9, y: 41.5}
+        - {x: -10, y: 41.5}
+        - {x: -24, y: 24.5}
+        - {x: -29, y: 4.5}
+        - {x: -29, y: -31.5}
+        - {x: -16, y: -41.5}
+        - {x: 18, y: -41.5}
+        - {x: 27, y: -29.5}
+        - {x: 29, y: -24.5}
+      - - {x: 0, y: 28.5}
+        - {x: -1, y: 28.5}
+        - {x: 3, y: 20.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
