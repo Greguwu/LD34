@@ -27,7 +27,7 @@ public class Player : MonoBehaviour {
     public float spriteMinimumSize;
     private float startSpriteMinimumSize;
     public float spriteMaximumSize;
-    private float startSpriteMaximumSize;
+    //private float startSpriteMaximumSize;
     public float trailScale;
     private CameraFollow mainCamera;
 
@@ -60,7 +60,7 @@ public class Player : MonoBehaviour {
         playerTrail = GetComponentInChildren<TrailRenderer>();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>();
         startSpriteMinimumSize = spriteMinimumSize;
-        startSpriteMaximumSize = spriteMaximumSize;
+        //startSpriteMaximumSize = spriteMaximumSize;
 		animator = playerSprite.GetComponent<Animator>();
 		//playerParticles = GetComponentInChildren<ParticleSystem>();
 		sourceAudio = GetComponent<AudioSource>();
@@ -98,7 +98,7 @@ public class Player : MonoBehaviour {
         }
 
         spriteMinimumSize = Maths.Remap(mainCamera.backParallax, mainCamera.backStartY, mainCamera.backStartY*-1, startSpriteMinimumSize, spriteMaximumSize);
-        spriteMaximumSize = Maths.Remap(mainCamera.backParallax, mainCamera.backStartY, mainCamera.backStartY*-1, startSpriteMaximumSize, spriteMaximumSize * 2);
+        //spriteMaximumSize = Maths.Remap(mainCamera.backParallax, mainCamera.backStartY, mainCamera.backStartY*-1, startSpriteMaximumSize, spriteMaximumSize * 2);
         transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, spriteMinimumSize, spriteMaximumSize), Mathf.Clamp(transform.localScale.y, spriteMinimumSize, spriteMaximumSize), 1);
         playerTrail.startWidth = Mathf.Clamp(transform.localScale.x * trailScale, 0.1f, 1);
     }
