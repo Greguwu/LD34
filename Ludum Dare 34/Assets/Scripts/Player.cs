@@ -77,12 +77,12 @@ public class Player : MonoBehaviour {
         if (((currentDevice.LeftStickX < 0.15)&&(currentDevice.LeftStickX > -0.15))&&((currentDevice.LeftStickY < 0.15) && (currentDevice.LeftStickY > -0.15)))
         {
             inMovement = false;
-            playerSprite.transform.eulerAngles = new Vector3(0, 0, lastStickRotation);
+            //playerSprite.transform.eulerAngles = new Vector3(0, 0, lastStickRotation);
         }
         else
         {
             inMovement = true;
-            playerSprite.transform.eulerAngles = new Vector3(0, 0, stickRotation - 270);
+            //playerSprite.transform.eulerAngles = new Vector3(0, 0, stickRotation - 270);
             //playerSprite.transform.eulerAngles = new Vector3(0, 0, Maths.Remap(stickRotation, -180, 0, -70, 70));
             lastStickRotation = stickRotation - 270;
         }

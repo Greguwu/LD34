@@ -47,14 +47,14 @@ namespace ComputerProfile
 					Target = InputControlType.LeftStickX,
 					// KeyCodeAxis splits the two KeyCodes over an axis. The first is negative, the second positive.
 					Source = KeyCodeAxis( KeyCode.LeftArrow, KeyCode.RightArrow ),
-				},
+				}/*,
                 new InputControlMapping
                 {
                     Handle = "Left Stick Y",
                     Target = InputControlType.LeftStickY,
 					// KeyCodeAxis splits the two KeyCodes over an axis. The first is negative, the second positive.
 					Source = KeyCodeAxis( KeyCode.DownArrow, KeyCode.UpArrow ),
-                }
+                }*/
             };
 		}
 	}
