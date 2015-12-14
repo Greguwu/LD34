@@ -52,7 +52,8 @@ public class Player : MonoBehaviour {
 	private int randomRange;
 
 	//IMPORTANT : DANS QUEL ENVIRONNEMENT ON EST :ville, foret, littoral, ocean
-	public string environnement = "ville"; 
+	public string environnement = "ville";
+    private float volumeSounds = 0.7f;
 
     // Use this for initialization
     void Start () {
@@ -134,7 +135,7 @@ public class Player : MonoBehaviour {
 				randomRange = Random.Range(0, collisonsVille.Length);
 		        if (collisonsVille[randomRange] != null)
 		        {
-					sourceAudio.PlayOneShot(collisonsVille[randomRange]);
+					sourceAudio.PlayOneShot(collisonsVille[randomRange], volumeSounds);
 		        }
     		break;
 
@@ -142,7 +143,7 @@ public class Player : MonoBehaviour {
 				randomRange = Random.Range(0, collisonsForet.Length);
 		        if (collisonsForet[randomRange] != null)
 		        {
-					sourceAudio.PlayOneShot(collisonsForet[randomRange]);
+					sourceAudio.PlayOneShot(collisonsForet[randomRange], volumeSounds);
 		        }
 			break;    	
 				
@@ -150,7 +151,7 @@ public class Player : MonoBehaviour {
 			randomRange = Random.Range(0, collisonsPlage.Length);
 		        if (collisonsPlage[randomRange] != null)
 		        {
-					sourceAudio.PlayOneShot(collisonsPlage[randomRange]);
+					sourceAudio.PlayOneShot(collisonsPlage[randomRange], volumeSounds);
 		        }
     		break;
     	}
@@ -166,7 +167,7 @@ public class Player : MonoBehaviour {
 				randomRange = Random.Range(0, plopsVille.Length);
 		        if (plopsVille[randomRange] != null)
 		        {
-					sourceAudio.PlayOneShot(plopsVille[randomRange]);
+					sourceAudio.PlayOneShot(plopsVille[randomRange], volumeSounds);
 		        }
     		break;
 
@@ -174,7 +175,7 @@ public class Player : MonoBehaviour {
 				randomRange = Random.Range(0, plopsForet.Length);
 		        if (plopsForet[randomRange] != null)
 		        {
-					sourceAudio.PlayOneShot(plopsForet[randomRange]);
+					sourceAudio.PlayOneShot(plopsForet[randomRange], volumeSounds);
 		        }
 			break;    	
 				
@@ -182,7 +183,7 @@ public class Player : MonoBehaviour {
 			randomRange = Random.Range(0, plopsPlage.Length);
 		        if (plopsPlage[randomRange] != null)
 		        {
-					sourceAudio.PlayOneShot(plopsPlage[randomRange]);
+					sourceAudio.PlayOneShot(plopsPlage[randomRange], volumeSounds);
 		        }
     		break;
     	}
@@ -194,15 +195,15 @@ public class Player : MonoBehaviour {
     	switch (environnement)
     	{
     		case "ville":
-				sourceAudio.PlayOneShot(sonsIN[0]);
+				sourceAudio.PlayOneShot(sonsIN[0], volumeSounds);
     		break;
 
 			case "foret":
-				sourceAudio.PlayOneShot(sonsIN[1]);
+				sourceAudio.PlayOneShot(sonsIN[1], volumeSounds);
 			break;    	
 				
 			case "ocean":
-				sourceAudio.PlayOneShot(sonsIN[2]);
+				sourceAudio.PlayOneShot(sonsIN[2], volumeSounds);
     		break;
     	}
 	}
@@ -213,15 +214,15 @@ public class Player : MonoBehaviour {
     	switch (environnement)
     	{
     		case "ville":
-				sourceAudio.PlayOneShot(sonsOUT[0]);
+				sourceAudio.PlayOneShot(sonsOUT[0], volumeSounds);
     		break;
 
 			case "foret":
-				sourceAudio.PlayOneShot(sonsOUT[1]);
+				sourceAudio.PlayOneShot(sonsOUT[1], volumeSounds);
 			break;    	
 				
 			case "ocean":
-				sourceAudio.PlayOneShot(sonsOUT[2]);
+				sourceAudio.PlayOneShot(sonsOUT[2], volumeSounds);
     		break;
     	}
 	}

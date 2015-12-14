@@ -17,11 +17,13 @@ public class IntroCamera : MonoBehaviour {
     private TrailRenderer playerTrail;
     public Animator dripAnimation;
     private AudioSource music1;
+    public SpriteRenderer inputSprite;
+    public SpriteRenderer hideSprite;
 
     // Use this for initialization
     void Awake () {
         DOTween.Init();
-        transform.DOMove(new Vector3(0, -3, -10), 1, false).OnComplete(CanPlay);
+        transform.DOMove(new Vector3(0, -3, -10), 10, false).OnComplete(CanPlay);
         followScript = GetComponent<CameraFollow>();
         playerScript = GameObject.FindGameObjectWithTag("Player").transform.parent.GetComponent<Player>();
         playerBody = GameObject.FindGameObjectWithTag("Player").transform.parent.GetComponent<Rigidbody2D>();
@@ -48,12 +50,15 @@ public class IntroCamera : MonoBehaviour {
             }
             else
             {
+                hideSprite.enabled = true;
                 followScript.enabled = true;
+                playerBody.transform.position = new Vector3(40, -0.7f, 0);
                 playerBody.gravityScale = 1;
                 playerScript.enabled = true;
-                enabled = false;
-                playerSprite.DOColor(new Color(255, 255, 255, 1), 5).OnComplete(enableTrail);
+                inputSprite.DOColor(new Color(255, 255, 255, 0), 0.5f);
+                playerSprite.enabled = true;
                 music1.Play();
+                enabled = false;
             }
         }
 	}
@@ -61,6 +66,13 @@ public class IntroCamera : MonoBehaviour {
     void CanPlay()
     {
         dripAnimation.enabled = true;
+        StartCoroutine(CanMove());
+    }
+
+    IEnumerator CanMove()
+    {
+        inputSprite.DOColor(new Color(255, 255, 255, 1), 2);
+        yield return new WaitForSeconds(2);
         canStart = true;
     }
 
