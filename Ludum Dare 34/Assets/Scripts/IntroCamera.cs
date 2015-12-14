@@ -55,7 +55,7 @@ public class IntroCamera : MonoBehaviour {
                 playerBody.transform.position = new Vector3(40, -0.7f, 0);
                 playerBody.gravityScale = 1;
                 playerScript.enabled = true;
-                inputSprite.DOColor(new Color(255, 255, 255, 0), 0.5f);
+                inputSprite.enabled = false;
                 playerSprite.enabled = true;
                 music1.Play();
                 enabled = false;
@@ -71,8 +71,8 @@ public class IntroCamera : MonoBehaviour {
 
     IEnumerator CanMove()
     {
-        inputSprite.DOColor(new Color(255, 255, 255, 1), 2);
         yield return new WaitForSeconds(2);
+        inputSprite.DOColor(new Color(255, 255, 255, 1), 2);
         canStart = true;
     }
 

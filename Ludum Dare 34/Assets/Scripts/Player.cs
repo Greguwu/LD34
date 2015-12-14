@@ -35,8 +35,9 @@ public class Player : MonoBehaviour {
 
 	private Animator animator;
 
-	//LES SONS DU JEU EN TABLEAU COMMME UN POOORC
-	private AudioSource sourceAudio;
+    //LES SONS DU JEU EN TABLEAU COMMME UN POOORC
+    [HideInInspector]
+    public AudioSource sourceAudio;
 	public AudioClip[] collisonsVille;
 	public AudioClip[] collisonsForet;
 	public AudioClip[] collisonsPlage;
