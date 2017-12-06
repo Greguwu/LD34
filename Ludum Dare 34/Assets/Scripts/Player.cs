@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-using InControl;
 using DG.Tweening;
 
 public class Player : MonoBehaviour {
 
-    public static InputDevice currentDevice;
-    private InControlManager inControlScript;
     private float xJoyAxis;
     private float yJoyAxis;
     [HideInInspector]
@@ -58,7 +55,6 @@ public class Player : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        currentDevice = InputManager.ActiveDevice;
         playerBody = GetComponent<Rigidbody2D>();
         playerSprite = GetComponentInChildren<SpriteRenderer>();
         playerTrail = GetComponentInChildren<TrailRenderer>();
@@ -73,13 +69,11 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        currentDevice = InputManager.ActiveDevice;
+        xJoyAxis = Input.GetAxis("Horizontal Axis");
+        yJoyAxis = Input.GetAxis("Vertical Axis");
+        stickRotation = Mathf.Atan2(yJoyAxis, xJoyAxis) * Mathf.Rad2Deg;
 
-        xJoyAxis = currentDevice.LeftStickX;
-        yJoyAxis = currentDevice.LeftStickY;
-        stickRotation = Mathf.Atan2(currentDevice.LeftStickY, currentDevice.LeftStickX) * Mathf.Rad2Deg;
-
-        if (((currentDevice.LeftStickX < 0.15)&&(currentDevice.LeftStickX > -0.15))&&((currentDevice.LeftStickY < 0.15) && (currentDevice.LeftStickY > -0.15)))
+        if (((xJoyAxis < 0.15)&&(xJoyAxis > -0.15))&&((yJoyAxis < 0.15) && (yJoyAxis > -0.15)))
         {
             inMovement = false;
             //playerSprite.transform.eulerAngles = new Vector3(0, 0, lastStickRotation);
@@ -92,7 +86,7 @@ public class Player : MonoBehaviour {
             lastStickRotation = stickRotation - 270;
         }
 
-        if (currentDevice.LeftStickY < 1)
+        if (yJoyAxis < 1)
         {
             velocityRemap = Maths.Remap(yJoyAxis, 1, -1, 1, maxDownVelocity + (playerBody.transform.localScale.x * scaleSpeedFactor));
         }

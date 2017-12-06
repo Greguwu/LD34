@@ -1,12 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using DG.Tweening;
-using InControl;
 
 
 public class IntroCamera : MonoBehaviour {
 
-    public static InputDevice currentDevice;
     private bool canStart;
     private CameraFollow followScript;
     private Player playerScript;
@@ -36,7 +34,6 @@ public class IntroCamera : MonoBehaviour {
 
     void Start()
     {
-        currentDevice = InputManager.ActiveDevice;
         secondCamera.transform.position = new Vector3(secondCamera.transform.position.x, playerScript.transform.position.y - 2, -10);
     }
 
@@ -44,7 +41,7 @@ public class IntroCamera : MonoBehaviour {
     void Update () {
         if (canStart)
         {
-            if (((currentDevice.LeftStickX < 0.15) && (currentDevice.LeftStickX > -0.15)) && ((currentDevice.LeftStickY < 0.15) && (currentDevice.LeftStickY > -0.15)))
+            if (((Input.GetAxis("Horizontal Axis") < 0.15) && (Input.GetAxis("Horizontal Axis") > -0.15)) && ((Input.GetAxis("Vertical Axis") < 0.15) && (Input.GetAxis("Vertical Axis") > -0.15)))
             {
                 //
             }
